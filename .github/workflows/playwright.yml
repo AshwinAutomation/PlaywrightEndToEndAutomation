@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RUNNER: ${{ secrets.RUNNER }}
-      TEST_USER_NAME: ${{ secrets.NOP_COMMERCE_USER_NAME}}
-      TEST_PASSWORD: ${{ secrets.NOP_COMMERCE_PASSWORD}}
+      TEST_USER_NAME: ${{ secrets.STAGGING_USER_NAME}}
+      TEST_PASSWORD: ${{ secrets.STAGGING_PASSWORD}}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -22,7 +22,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run:  npm run dev_env_nopcommerceLogin
+        run:  npm run MakeAppointment                                                                                                                                         
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
