@@ -3,13 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo": "npx playwright test tests/demo/example.spec.ts --project=chromium --headed ",
+    "demo:firefox": "npx playwright test tests/demo/example.spec.ts --project=firefox --headed",
+    "logintest": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed",
+    "logintest:tags": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep \"@smoke|@sanity\"",
+    "logintest:tag_smoke": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @smoke",
+    "logintest:tag_sanity": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @sanity",
+    "MakeAppointment": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/MakeAppointment.spec.ts --project=chromium --headed",
+    "stagging_env:logintest": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/login.spec.ts --project=chromium --headed",
+    "dev_env_nopcommerceLogin": "npx playwright test --config=config/dev.playwright.config.ts tests/e2e/nopcommerce.e2e.spec.ts --project=chromium --headed",
+    "multiwindow": "npx playwright test --config=config/dev.playwright.config.ts tests/functionals/multi.window.spec.ts --project=chromium --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.7.1",
+    "chalk": "^5.6.2",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2"
   }
 }

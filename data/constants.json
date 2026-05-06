@@ -1,0 +1,12 @@
+{
+  "STATUSCODE": {
+    "success": 200,
+    "badrequest": 400,
+    "unauthorized": 401,
+    "notfound ": 404
+  },
+  "ENDPOINTS": {
+    "getEmployees": "/employees",
+    "createEmployee": "/create"
+  }
+}

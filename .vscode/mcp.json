@@ -1,0 +1,11 @@
+// https://github.com/microsoft/playwright-mcp
+{
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}

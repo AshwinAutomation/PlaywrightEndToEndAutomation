@@ -1,0 +1,4 @@
+testId,facility,hcp,visitDt
+TC101,"Tokyo CURA Healthcare Center",Medicare,05/10/2025
+TC102,"Hongkong CURA Healthcare Center",Medicaid,05/10/2027
+TC103,"Seoul CURA Healthcare Center",None,15/12/2029

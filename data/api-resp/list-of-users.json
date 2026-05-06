@@ -1,0 +1,50 @@
+{
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "name": "Michael Lawson",
+      "year": 2011,
+      "color": "#DDDDDD",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 8,
+      "name": "Lindsay Ferguson",
+      "year": 2011,
+      "color": "#3B5998",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 9,
+      "name": "Tobias Funke",
+      "year": 2011,
+      "color": "#DDDDDD",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 10,
+      "name": "Byron Fields",
+      "year": 2011,
+      "color": "#3B5998",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 11,
+      "name": "George Edwards",
+      "year": 2011,
+      "color": "#DDDDDD",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 12,
+      "name": "Rachel Howell",
+      "year": 2011,
+      "color": "#3B5998",
+      "pantone_value": "17-2031"
+    }
+  ]
+}
