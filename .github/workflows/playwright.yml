@@ -22,7 +22,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run:  npm run MakeAppointment                                                                                                                                  
+        run:  npm run MakeAppointment_headless                                                                                                                                  
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:

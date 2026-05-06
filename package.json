@@ -11,6 +11,7 @@
     "logintest:tag_smoke": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @smoke",
     "logintest:tag_sanity": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @sanity",
     "MakeAppointment": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/MakeAppointment.spec.ts --project=chromium --headed",
+    "MakeAppointment_headless": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/MakeAppointment.spec.ts --project=chromium",
     "stagging_env:logintest": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/login.spec.ts --project=chromium --headed",
     "dev_env_nopcommerceLogin": "npx playwright test --config=config/dev.playwright.config.ts tests/e2e/nopcommerce.e2e.spec.ts --project=chromium --headed",
     "multiwindow": "npx playwright test --config=config/dev.playwright.config.ts tests/functionals/multi.window.spec.ts --project=chromium --headed"
