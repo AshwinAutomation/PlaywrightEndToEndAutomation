@@ -10,6 +10,7 @@
     "logintest:tags": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep \"@smoke|@sanity\"",
     "logintest:tag_smoke": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @smoke",
     "logintest:tag_sanity": "npx playwright test tests/functionals/login.spec.ts --project=chromium --headed --grep @sanity",
+    "logintest:comprehensive": "npx playwright test tests/functionals/login-comprehensive.spec.ts --project=chromium --headed",
     "MakeAppointment": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/MakeAppointment.spec.ts --project=chromium --headed",
     "MakeAppointment_headless": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/MakeAppointment.spec.ts --project=chromium",
     "stagging_env:logintest": "npx playwright test --config=config/test.playwright.config.ts tests/functionals/login.spec.ts --project=chromium --headed",
@@ -21,7 +22,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
+    "@playwright/test": "^1.60.0",
     "@types/node": "^25.6.0",
     "allure-playwright": "^3.7.1",
     "chalk": "^5.6.2",

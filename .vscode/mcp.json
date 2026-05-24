@@ -1,11 +1,13 @@
-// https://github.com/microsoft/playwright-mcp
 {
   "servers": {
-    "playwright": {
+    "playwright-test": {
+      "type": "stdio",
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest"
+        "playwright",
+        "run-test-mcp-server"
       ]
     }
-  }
+  },
+  "inputs": []
 }
